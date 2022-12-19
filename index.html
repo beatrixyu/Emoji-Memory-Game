@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Grace's Memory Game</title>
     <style>
+      body {
+        width: 100%
+      }
       .title {
         font-size: 2rem;
         margin: 20px auto;
@@ -165,8 +168,8 @@
             document.getElementById(el2).children[1].innerText
           ) {
             setTimeout(() => {
-            document.getElementById(el1).style.visibility = "hidden";
-            document.getElementById(el2).style.visibility = "hidden";
+            document.getElementById(el1).style.opacity = "20%";
+            document.getElementById(el2).style.opacity = "20%";
             }, 1000);
           } else {
             setTimeout(() => {
