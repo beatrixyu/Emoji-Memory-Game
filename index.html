@@ -165,8 +165,10 @@
             document.getElementById(el1).children[1].innerText ==
             document.getElementById(el2).children[1].innerText
           ) {
+            setTimeout(() => {
             document.getElementById(el1).style.visibility = "hidden";
             document.getElementById(el2).style.visibility = "hidden";
+            }, 1000);
           } else {
             setTimeout(() => {
               document.getElementById(el1).classList.remove("card");
@@ -211,7 +213,7 @@
               cardback
                 .closest(".flip-card")
                 .classList.add("flip-card-valid-match");
-            }, 500);
+            }, 1000);
           } else if (
             cardback.closest(".flip-card") &&
             !cardback.classList.contains("card-back-match")
@@ -239,7 +241,7 @@
         displayPlayerMoves(false);
         setTimeout(() => {
           removeCardFlipClass();
-        }, 500);
+        }, 1000);
         resetCardClicks();
         clearCardIndexesArr();
       };
